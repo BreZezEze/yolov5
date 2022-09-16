@@ -113,7 +113,7 @@ class Annotator:
                             txt_color,
                             thickness=tf,
                             lineType=cv2.LINE_AA)
-
+        print("左上点的坐标为：(" + str(box[0]) + "," + str(box[1]) + ")，右下点的坐标为(" + str(box[2]) + "," + str(box[3]) + ")")
     def masks(self, masks, colors, im_gpu=None, alpha=0.5):
         """Plot masks at once.
         Args:
